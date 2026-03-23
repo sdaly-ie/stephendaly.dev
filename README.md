@@ -1,10 +1,10 @@
 # Stephen Daly
 
-I am currently completing an NFQ Level 9 Postgraduate Diploma in Software Development, Cloud Computing and DevOps, building on prior experience in healthcare, clinical, data, and regulatory environments where accuracy, traceability, and delivery discipline were important.
+I am currently completing an NFQ Level 9 Postgraduate Diploma in Software Development, Cloud Computing and DevOps, building on prior experience in healthcare, clinical research, data, and regulatory environments where accuracy, traceability, and delivery discipline were important.
 
 Early-career software engineer focused on backend development, cloud, CI/CD, automation, and platform engineering.
 
-This repository acts as a landing page for my portfolio. It highlights projects that show how I approach software delivery, testing, deployment, and operational thinking across Java, Python, Firebase, Jenkins, AWS, and React.
+This repository acts as a landing page for my portfolio. It highlights projects that show how I approach software delivery, testing, deployment, observability, and operational thinking across Java, Python, Firebase, Jenkins, AWS, Prometheus, Grafana, OpenTelemetry, and React.
 
 ## Relevant role families
 
@@ -34,15 +34,19 @@ Repo:
 
 ### Petitions CI/CD Pipeline App (`ct5209-springboot-war`)
 
-Spring Boot web application packaged as a WAR file and deployed through a Jenkins pipeline to a Dockerized Apache Tomcat container on AWS EC2.
+Spring Boot web application packaged as a WAR file and deployed through a Jenkins pipeline to a Dockerized Apache Tomcat container on AWS EC2, with a local observability setup using Spring Boot Actuator, Prometheus, Grafana, OpenTelemetry, and Jaeger.
 
 What it shows:
+
 - Java web application packaging and deployment
 - Jenkins-driven CI/CD workflow
 - Docker-based containerization and runtime delivery
 - Practical cloud-hosted deployment on AWS EC2
+- Metrics exposure and monitoring with Spring Boot Actuator, Prometheus, and Grafana
+- Basic request tracing with OpenTelemetry and Jaeger
 
 Repo:
+
 - https://github.com/sdaly-ie/ct5209-springboot-war
 
 ### HiveWatch Lite (`hivewatch-lite`)
@@ -78,7 +82,7 @@ Repo:
 The projects are ordered to show a practical spread of engineering capability across:
 
 1. Cloud and backend automation
-2. Java deployment and CI/CD
+2. Java deployment, CI/CD, and observability
 3. Full-stack application development
 4. Python scripting and data tooling
 
