@@ -47,17 +47,19 @@ Repo:
 
 ### HiveWatch Lite (`hivewatch-lite`)
 
-Full-stack beehive monitoring prototype built with a Spring Boot REST API and a React + TypeScript front end for managing hives and temperature readings, designed around a realistic beekeeping use case with layered automated back-end testing and stronger testing and QA evidence.
+Full-stack beehive monitoring prototype built with a Spring Boot REST API and a React + TypeScript front end for managing hives and temperature readings, designed around a realistic beekeeping use case. The project now also includes a small practical AI-facing feature, stronger CI evidence, and expanded automated testing and QA documentation.
 
 What it shows:
-- Full-stack development using Java, Spring Boot, React, and TypeScript
-- Layered back-end design with controllers, services, repositories, DTOs, and JPA
-- Real domain behaviour including CRUD, search, filtering, relationships, aggregation, and API-driven UI flows
-- Service-layer validation and business rules beyond thin CRUD
-- Layered automated testing with repository, service, and controller coverage, plus boundary-focused checks, traceability, and JaCoCo reporting
+* Full-stack development using Java, Spring Boot, React, and TypeScript
+* Layered back-end design with controllers, services, repositories, DTOs, and JPA
+* Real domain behaviour including CRUD, search, filtering, relationships, aggregation, and API-driven UI flows
+* Service-layer validation and business rules beyond thin CRUD
+* Layered automated testing with repository, service, and controller coverage, plus boundary-focused checks, traceability, and JaCoCo reporting
+* A practical AI-enhanced feature through Hive Health Insight, with optional OpenAI-backed summaries and deterministic fallback behaviour
+* Front-end CI quality checks using GitHub Actions, plus reviewer-facing AI-assisted QA artefacts that document how AI-generated test ideas were filtered into real test coverage
 
 Repo:
-- https://github.com/sdaly-ie/hivewatch-lite
+* https://github.com/sdaly-ie/hivewatch-lite
 
 ### Property Tracker CLI (`property-tracker-cli`)
 
