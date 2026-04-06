@@ -2,13 +2,13 @@
 
 I am currently completing an NFQ Level 9 Postgraduate Diploma in Software Development, Cloud Computing and DevOps, building on prior experience in healthcare, clinical research, data, and regulatory environments where accuracy, traceability, and delivery discipline were important.
 
-Early-career software engineer focused on software development, cloud, CI/CD, automation, and platform engineering.
+Early-career software engineer focused on backend development, cloud, CI/CD, automation, test automation, and platform engineering.
 
-This repository serves as a landing page for my portfolio. It highlights projects that show how I approach software delivery, testing, deployment, observability, and operational thinking across Java, Python, Firebase, Jenkins, AWS, Prometheus, Grafana, OpenTelemetry, and React.
+This repository serves as a landing page for my portfolio. It highlights projects that show how I approach software delivery, automated testing, deployment, observability, and operational thinking across Java, Python, Firebase, Spring Boot, React, Jenkins, GitHub Actions, AWS, Prometheus, Grafana, and OpenTelemetry.
 
 ## Relevant role families
 
-This portfolio is currently most relevant to early-career software roles, including Intern, Graduate, and Junior positions in software engineering, platform/cloud-adjacent engineering, and test automation.
+This portfolio is currently most relevant to early-career software roles, including Intern, Graduate, and Junior positions in software engineering, platform / cloud / DevOps-adjacent engineering, and test automation.
 
 - Software Engineering
 - Platform / DevOps / Cloud Engineering
@@ -30,36 +30,39 @@ What it shows:
 Repo:
 - https://github.com/sdaly-ie/firebase-serverless-rest-api
 
-### Petitions CI/CD Pipeline App (`ct5209-springboot-war`)
+### Petitions CI/CD, Observability, and Browser Automation App (`ct5209-springboot-war`)
 
-Spring Boot web application packaged as a WAR file and deployed through a Jenkins pipeline to a Dockerized Apache Tomcat container on AWS EC2, with a local observability setup using Spring Boot Actuator, Prometheus, Grafana, OpenTelemetry, and Jaeger.
+Spring Boot web application packaged as a WAR file and deployed through a Jenkins pipeline to a Dockerized Apache Tomcat container on AWS EC2. The project also includes a local observability setup using Spring Boot Actuator, Prometheus, Grafana, OpenTelemetry, and Jaeger, along with Cypress browser automation for key end-to-end user flows and a supporting GitHub Actions workflow.
 
 What it shows:
-- Java web application packaging and deployment
-- Jenkins-driven CI/CD workflow
-- Docker-based containerization and runtime delivery
-- Practical cloud-hosted deployment on AWS EC2
-- Metrics exposure and monitoring with Spring Boot Actuator, Prometheus, and Grafana
-- Basic request tracing with OpenTelemetry and Jaeger
+- Java web application packaging and deployment using Spring Boot, WAR packaging, and Apache Tomcat
+- Jenkins-driven CI/CD with manual deployment approval and EC2 delivery
+- Docker-based runtime deployment on AWS EC2
+- Local observability using Spring Boot Actuator, Prometheus, Grafana, OpenTelemetry, and Jaeger
+- Browser-level end-to-end verification using Cypress for petition creation and search flows
+- Practical use of complementary pipelines, with Jenkins handling deployment and GitHub Actions handling lightweight browser automation checks
 
 Repo:
 - https://github.com/sdaly-ie/ct5209-springboot-war
 
 ### HiveWatch Lite (`hivewatch-lite`)
 
-Full-stack beehive monitoring prototype built with a Spring Boot REST API and a React + TypeScript front end for managing hives and temperature readings, designed around a realistic beekeeping use case. The project now also includes a small practical AI-facing feature, stronger CI evidence, and expanded automated testing and QA documentation.
+Full-stack beehive monitoring prototype built with a Spring Boot REST API and a React + TypeScript front end for managing hives and temperature readings, designed around a realistic beekeeping use case. The project includes layered back-end testing, front-end component testing, browser-level smoke testing, CI-based quality checks, and a small practical AI-enhanced feature with deterministic fallback behaviour.
 
 What it shows:
-* Full-stack development using Java, Spring Boot, React, and TypeScript
-* Layered back-end design with controllers, services, repositories, DTOs, and JPA
-* Real domain behaviour including CRUD, search, filtering, relationships, aggregation, and API-driven UI flows
-* Service-layer validation and business rules beyond thin CRUD
-* Layered automated testing with repository, service, and controller coverage, plus boundary-focused checks, traceability, and JaCoCo reporting
-* A practical AI-enhanced feature through Hive Health Insight, with optional OpenAI-backed summaries and deterministic fallback behaviour
-* Front-end CI quality checks using GitHub Actions, plus reviewer-facing AI-assisted QA artefacts that document how AI-generated test ideas were filtered into real test coverage
+- Full-stack development using Java, Spring Boot, React, and TypeScript
+- Layered back-end design with controllers, services, repositories, DTOs, and JPA
+- Real domain behaviour including CRUD, search, filtering, relationships, aggregation, and API-driven UI flows
+- Service-layer validation and business rules beyond thin CRUD
+- Layered automated testing with repository, service, and controller coverage, plus JaCoCo reporting and traceability notes
+- Front-end component testing with Vitest and React Testing Library
+- Browser-level smoke testing with Selenium WebDriver
+- CI-based quality signals through GitHub Actions and SonarQube Cloud
+- A practical AI-enhanced feature through Hive Health Insight, with optional OpenAI-backed summaries and deterministic fallback behaviour
+- AI-assisted QA notes that show selection and judgement rather than blind acceptance
 
 Repo:
-* https://github.com/sdaly-ie/hivewatch-lite
+- https://github.com/sdaly-ie/hivewatch-lite
 
 ### Property Tracker CLI (`property-tracker-cli`)
 
@@ -80,8 +83,8 @@ Repo:
 The projects are ordered to show a practical spread of engineering capability across:
 
 1. Cloud and back-end automation
-2. Java deployment, CI/CD, and observability
-3. Full-stack application development
+2. Java deployment, CI/CD, observability, and browser automation
+3. Full-stack application development, layered testing, and AI-assisted feature integration
 4. Python scripting and data tooling
 
 ## GitHub profile
