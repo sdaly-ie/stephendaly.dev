@@ -18,9 +18,9 @@ Key links
 
 * [GitHub profile](https://github.com/sdaly-ie)
 * [Firebase Serverless REST API Demo](https://github.com/sdaly-ie/firebase-serverless-rest-api)
-* [Distributed Flask Wiki Cache App](https://github.com/sdaly-ie/distributed-flask-wiki-cache)
 * [Petitions CI/CD, Observability, and Browser Automation App](https://github.com/sdaly-ie/ct5209-springboot-war)
 * [HiveWatch Lite](https://github.com/sdaly-ie/hivewatch-lite)
+* [Distributed Flask Wiki Cache App](https://github.com/sdaly-ie/distributed-flask-wiki-cache)
 * [Property Tracker CLI](https://github.com/sdaly-ie/property-tracker-cli)
 
 ## Featured projects
@@ -40,23 +40,6 @@ What it shows
 Links
 
 * [Repository](https://github.com/sdaly-ie/firebase-serverless-rest-api)
-
-### Distributed Flask Wiki Cache App (`distributed-flask-wiki-cache`)
-
-Three-tier distributed Flask web application with a front end running on an Ubuntu virtual machine, a remote Wikipedia lookup executed over SSH on Amazon EC2, and a MySQL cache running in Docker on a separate Ubuntu virtual machine.
-
-What it shows
-
-* Python and Flask back-end development
-* Distributed application flow across host, local virtual machines, and AWS EC2
-* Remote script execution over SSH using Paramiko
-* Dockerized MySQL caching with a cache-aside retrieval pattern
-* Environment-based configuration for machine-specific values
-* Practical troubleshooting across networking, remote execution, and data boundaries
-
-Links
-
-* [Repository](https://github.com/sdaly-ie/distributed-flask-wiki-cache)
 
 ### Petitions CI/CD, Observability, and Browser Automation App (`ct5209-springboot-war`)
 
@@ -92,6 +75,23 @@ Links
 
 * [Repository](https://github.com/sdaly-ie/hivewatch-lite)
 
+### Distributed Flask Wiki Cache App (`distributed-flask-wiki-cache`)
+
+Three-tier distributed Flask web application with a front end running on an Ubuntu virtual machine, a remote Wikipedia lookup executed over SSH on Amazon EC2, and a MySQL cache running in Docker on a separate Ubuntu virtual machine.
+
+What it shows
+
+* Python and Flask back-end development
+* Distributed application flow across host, local virtual machines, and AWS EC2
+* Remote script execution over SSH using Paramiko
+* Dockerized MySQL caching with a cache-aside retrieval pattern
+* Environment-based configuration for machine-specific values
+* Practical troubleshooting across networking, remote execution, and data boundaries
+
+Links
+
+* [Repository](https://github.com/sdaly-ie/distributed-flask-wiki-cache)
+
 ### Property Tracker CLI (`property-tracker-cli`)
 
 Python command-line application for analysing Irish new-house price data via the Google Sheets API, with export workflows and a browser-based terminal demo wrapper.
@@ -112,15 +112,15 @@ Links
 
 For QA / Test Automation roles
 
-* Start with [Petitions CI/CD, Observability, and Browser Automation App](https://github.com/sdaly-ie/ct5209-springboot-war)
-* Then review [Firebase Serverless REST API Demo](https://github.com/sdaly-ie/firebase-serverless-rest-api)
+* Start with [Firebase Serverless REST API Demo](https://github.com/sdaly-ie/firebase-serverless-rest-api)
+* Then review [Petitions CI/CD, Observability, and Browser Automation App](https://github.com/sdaly-ie/ct5209-springboot-war)
 * Then review [HiveWatch Lite](https://github.com/sdaly-ie/hivewatch-lite)
 
 For Platform / DevOps / Cloud roles
 
-* Start with [Firebase Serverless REST API Demo](https://github.com/sdaly-ie/firebase-serverless-rest-api)
+* Start with [Petitions CI/CD, Observability, and Browser Automation App](https://github.com/sdaly-ie/ct5209-springboot-war)
+* Then review [Firebase Serverless REST API Demo](https://github.com/sdaly-ie/firebase-serverless-rest-api)
 * Then review [Distributed Flask Wiki Cache App](https://github.com/sdaly-ie/distributed-flask-wiki-cache)
-* Then review [Petitions CI/CD, Observability, and Browser Automation App](https://github.com/sdaly-ie/ct5209-springboot-war)
 
 For Software Engineering roles
 
