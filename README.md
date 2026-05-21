@@ -60,18 +60,16 @@ Links
 
 ### HiveWatch Cloud IoT (`hivewatch-cloud-iot`)
 
-Cloud-connected beehive monitoring project focused on automated temperature capture rather than manually maintained local records. The current public baseline validates a waterproof DS18B20 probe on an ESP32 chip with Arduino/C++ telemetry firmware, and end-to-end ingestion through a hosted Azure Function endpoint.
-
-This project is being developed toward persistent cloud storage, a more standardised deployment path, dashboard retrieval, and near-real-time monitoring.
+Cloud-connected beehive monitoring project focused on automated temperature capture rather than manually maintained local records. The current public baseline validates a real temperature telemetry path from ESP32 firmware through Azure Functions, Azure Table Storage persistence, hosted telemetry retrieval, and a local ASP.NET Core Razor Pages monitoring dashboard with latest reading, recent readings, and freshness status.
 
 What it shows
 
-* Embedded telemetry development using Arduino/C++ on ESP32 with a waterproof DS18B20 temperature probe
-* Azure Functions development in C# using the .NET 8 isolated worker model
-* End-to-end sensor-to-cloud ingestion using validated JSON telemetry
-* Staged proof-of-concept progression across device, networking, and cloud integration layers
-* Evidence-led troubleshooting and design decisions during technical validation
-* A clear engineering path toward persistent cloud storage, deployment standardisation, dashboard retrieval, and near-real-time monitoring
+* Embedded telemetry development using Arduino/C++ firmware and a physical temperature probe
+* C#/.NET 8 Azure Functions for telemetry ingestion and hosted retrieval
+* Azure Table Storage persistence for accepted telemetry readings
+* Local ASP.NET Core Razor Pages dashboard showing latest telemetry, recent readings, and freshness state
+* Staged proof-of-concept progression across device, networking, cloud ingestion, persistence, retrieval, and dashboard layers
+* Evidence-led troubleshooting, decision logging, and scope control during technical validation
 
 Links
 
@@ -100,8 +98,8 @@ Links
 
 | Project | Problem it solves | Core design approach | Main engineering signal |
 |---|---|---|---|
-| **HiveWatch Lite** | Demonstrates a full-stack beekeeping application for manually managing hive and temperature-reading records, with a scoped insight feature for summarising available data | Local Spring Boot + React application with REST API flows, domain modelling, bounded AI-assisted insight generation, and layered automated testing | Full-stack software engineering, business logic, UI/API integration, pragmatic AI feature integration, and test automation |
-| **HiveWatch Cloud IoT** | Addresses the limitation of manual/local monitoring by moving toward automated live temperature capture from physical hardware | ESP32 + DS18B20 telemetry using Arduino/C++, Azure Function ingestion in C#, with progression toward persistent cloud storage, a more standardised deployment path, and near-real-time monitoring | Systems thinking, embedded-to-cloud architecture, telemetry design, cloud integration, and engineering evolution from prototype to operational monitoring |
+| **HiveWatch Lite** | Helps address the limitation of scattered or manually maintained hive temperature records by giving beekeepers a simple way to associate temperature readings with individual hives. It is a local full-stack beekeeping record application focused on hive records, temperature-reading entries, and scoped insight generation from the available temperature data. | Local Spring Boot and React full-stack application with REST API flows, domain modelling for hive records and temperature-reading records, bounded AI-assisted insight generation over the available temperature data, and layered automated testing across backend and frontend behaviour. | Full-stack application engineering, practical domain modelling, UI/API integration, manual temperature-record handling, pragmatic AI feature integration, and test-focused development in a realistic beekeeping context. |
+| **HiveWatch Cloud IoT** | Supports beekeepers managing hives across dispersed apiary sites, where manual checks can become time-consuming, reactive, and difficult to prioritise. It is a cloud-connected beehive temperature-monitoring prototype that moves physical temperature telemetry through a staged sensor-to-cloud-to-dashboard path. | ESP32 and DS18B20 temperature telemetry using Arduino/C++ firmware; C#/.NET 8 Azure Functions for telemetry ingestion and hosted GetRecentTelemetry retrieval; Azure Table Storage persistence; and a local ASP.NET Core Razor Pages dashboard showing latest telemetry, recent readings, and freshness status. | End-to-end embedded-to-cloud engineering across real hardware, Wi-Fi/HTTPS telemetry, serverless ingestion, durable cloud storage, hosted read-back, and local dashboard monitoring, with evidence-led validation, staged delivery, and clear scope control. |
 
 ### Distributed Flask Wiki Cache App (`distributed-flask-wiki-cache`)
 
