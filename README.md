@@ -60,21 +60,30 @@ Links
 
 ### HiveWatch Cloud IoT (`hivewatch-cloud-iot`)
 
-Cloud-connected beehive monitoring project focused on automated temperature capture rather than manually maintained local records. The current public baseline validates a real temperature telemetry path from ESP32 firmware through Azure Functions, Azure Table Storage persistence, hosted telemetry retrieval, and a local ASP.NET Core Razor Pages monitoring dashboard with latest reading, recent readings, and freshness status.
+HiveWatch Cloud IoT is my capstone project. It is a cloud-connected beehive monitoring prototype that helps reduce blind spots between hive inspections.
+
+The system takes a real temperature reading from a DS18B20 temperature probe connected to an ESP32 board. The ESP32 sends the reading over Wi-Fi to a hosted .NET 8 Azure Function. The reading is then stored in Azure Table Storage, retrieved through a hosted `GetRecentTelemetry` endpoint, and shown in a local ASP.NET Core Razor Pages dashboard.
+
+The dashboard shows the latest temperature reading, recent readings, whether the data is fresh or stale, and a simple brood-area temperature alert status.
+
+On 23 May 2026, I completed a fresh full-chain bench validation. This confirmed that a live DS18B20 temperature reading could travel through the full current system from sensor, to ESP32, to Azure, to storage, to retrieval, and finally to the dashboard.
+
+This is a bench-validated capstone prototype. It is not a production hive monitoring system, a biological diagnosis tool, a deployed Azure dashboard, or a completed long-running telemetry system.
 
 What it shows
 
-* Embedded telemetry development using Arduino/C++ firmware and a physical temperature probe
-* C#/.NET 8 Azure Functions for telemetry ingestion and hosted retrieval
-* Azure Table Storage persistence for accepted telemetry readings
-* Local ASP.NET Core Razor Pages dashboard showing latest telemetry, recent readings, and freshness state
-* Staged proof-of-concept progression across device, networking, cloud ingestion, persistence, retrieval, and dashboard layers
-* Evidence-led troubleshooting, decision logging, and scope control during technical validation
+* Physical sensor integration using an ESP32 and DS18B20 temperature probe
+* Arduino/C++ firmware for reading and sending telemetry
+* C#/.NET 8 Azure Functions for receiving and retrieving telemetry
+* Azure Table Storage for storing accepted readings
+* A local ASP.NET Core Razor Pages dashboard for viewing readings and status
+* End-to-end validation across hardware, Wi-Fi, cloud ingestion, storage, retrieval, and dashboard display
+* Evidence-led troubleshooting, decision logging, GitHub workflow, and careful scope control
 
 Links
 
 * [Repository](https://github.com/sdaly-ie/hivewatch-cloud-iot)
-
+    
 ### HiveWatch Lite (`hivewatch-lite`)
 
 Local full-stack beehive management prototype for manually recording hives and temperature readings, exploring practical application workflows, and generating a scoped Hive Health Insight. It combines CRUD, search, filtering, reassignment, aggregation, and optional OpenAI-backed summary generation with a deterministic local fallback.
@@ -99,7 +108,7 @@ Links
 | Project | Problem it solves | Core design approach | Main engineering signal |
 |---|---|---|---|
 | **HiveWatch Lite** | Helps address the limitation of scattered or manually maintained hive temperature records by giving beekeepers a simple way to associate temperature readings with individual hives. It is a local full-stack beekeeping record application focused on hive records, temperature-reading entries, and scoped insight generation from the available temperature data. | Local Spring Boot and React full-stack application with REST API flows, domain modelling for hive records and temperature-reading records, bounded AI-assisted insight generation over the available temperature data, and layered automated testing across backend and frontend behaviour. | Full-stack application engineering, practical domain modelling, UI/API integration, manual temperature-record handling, pragmatic AI feature integration, and test-focused development in a realistic beekeeping context. |
-| **HiveWatch Cloud IoT** | Supports beekeepers managing hives across dispersed apiary sites, where manual checks can become time-consuming, reactive, and difficult to prioritise. It is a cloud-connected beehive temperature-monitoring prototype that moves physical temperature telemetry through a staged sensor-to-cloud-to-dashboard path. | ESP32 and DS18B20 temperature telemetry using Arduino/C++ firmware; C#/.NET 8 Azure Functions for telemetry ingestion and hosted GetRecentTelemetry retrieval; Azure Table Storage persistence; and a local ASP.NET Core Razor Pages dashboard showing latest telemetry, recent readings, and freshness status. | End-to-end embedded-to-cloud engineering across real hardware, Wi-Fi/HTTPS telemetry, serverless ingestion, durable cloud storage, hosted read-back, and local dashboard monitoring, with evidence-led validation, staged delivery, and clear scope control. |
+| **HiveWatch Cloud IoT** | Helps beekeepers reduce blind spots between hive inspections, especially when hives are spread across different locations. It is a cloud-connected beehive temperature monitoring prototype that moves a real temperature reading from a physical sensor to a web dashboard. | ESP32 and DS18B20 temperature sensing using Arduino/C++ firmware, C#/.NET 8 Azure Functions for telemetry ingestion and retrieval, Azure Table Storage for persistence, and a local ASP.NET Core Razor Pages dashboard showing latest readings, recent readings, freshness status, and brood-area temperature alert status. The 23 May 2026 bench validation confirmed that a live DS18B20 reading could travel through the full current chain. | End-to-end embedded-to-cloud engineering using real hardware, Wi-Fi telemetry, serverless cloud functions, cloud storage, hosted retrieval, and dashboard monitoring, supported by evidence-led validation, staged delivery, GitHub workflow, and clear scope control. |
 
 ### Distributed Flask Wiki Cache App (`distributed-flask-wiki-cache`)
 
